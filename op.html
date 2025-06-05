@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern DECO+ - Agence de décoration d'intérieur à Ouagadougou, Burkina Faso. Design, aménagement, rénovation, et décoration personnalisée." />
+  <meta name="keywords" content="décoration, intérieur, design, Burkina Faso, Modern DECO+" />
+  <meta name="author" content="Modern DECO+" />
+  <title>Modern DECO+</title>
+  <style>
+    :root {
+      --vert: #00a651;
+      --noir: #000000;
+      --blanc: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-image: url('images/v.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: var(--noir);
+    }
+
+    header {
+      background-image: url('images/s.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: var(--blanc);
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      justify-content: start;
+      max-width: 1500px;
+      margin: auto;
+      padding: 0 1em;
+    }
+
+    header img {
+      max-width: 300px;
+      margin-bottom: 0.5em;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
+    h1, h2, h3 {
+      color: var(--vert);
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    .contact {
+      background-color: #f4f4f4;
+      padding: 1em;
+      border-radius: 8px;
+      margin-top: 2em;
+    }
+
+    .mini-sections {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 1em;
+      overflow-x: auto;
+      margin-top: 2em;
+    }
+
+    .mini {
+      flex: 1 0 300px;
+      background: #f9f9f9;
+      padding: 1em;
+      border-radius: 8px;
+      min-width: 220px;
+      max-width: 250px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .mini h2 {
+      font-size: 1.1em;
+      margin-bottom: 0.5em;
+    }
+
+    .mini ul {
+      list-style: disc;
+      padding-left: 1em;
+    }
+
+    .galerie-produits {
+      margin-top: 3em;
+    }
+
+    .galerie-produits h2 {
+      text-align: center;
+      color: var(--vert);
+      margin-bottom: 1em;
+    }
+
+    .galerie {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5em;
+      padding: 1em 0;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .galerie .item {
+      background-color: #f9f9f9;
+      padding: 1em;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .galerie .item:hover {
+      transform: scale(1.02);
+    }
+
+    .galerie .item img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .prix {
+      margin-top: 0.5em;
+      font-weight: bold;
+      color: var(--noir);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: var(--noir);
+      color: var(--blanc);
+      margin-top: 3em;
+    }
+
+    /* Bouton WhatsApp flottant */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+    }
+
+    @media (max-width: 768px) {
+      .mini-sections {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .galerie {
+        grid-template-columns: 1fr;
+      }
+
+      .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      header img {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/logo-mdplus.png" alt="Logo de Modern DECO+" />
+      <div>
+        <h1>Modern DECO+</h1>
+        <p>Chez vous, avec nous</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Notre Mission</h2>
+      <p><strong>Modern DECO+ est une agence de décoration d’intérieur qui allie esthétique et fonctionnalité.</strong> Nous créons des espaces personnalisés qui reflètent la personnalité de nos clients tout en maximisant leur confort.</p>
+    </section>
+
+    <div class="mini-sections">
+      <section class="mini">
+        <h2>Nos Services</h2>
+        <ul>
+          <li>Design intérieur</li>
+          <li>Aménagement</li>
+          <li>Conseil déco</li>
+          <li>Rénovation</li>
+        </ul>
+      </section>
+
+      <section class="mini">
+        <h2>Nos Prestations</h2>
+        <ul>
+          <li>Consultation</li>
+          <li>Plans 2D/3D</li>
+          <li>Décoration</li>
+          <li>Installation</li>
+        </ul>
+      </section>
+
+      <section class="mini">
+        <h2>Notre Équipe</h2>
+        <p>Une équipe passionnée, créative et attentive à vos besoins.</p>
+      </section>
+
+      <section class="mini">
+        <h2>Notre Philosophie</h2>
+        <p>Créer des espaces beaux, fonctionnels et personnalisés pour chacun.</p>
+      </section>
+    </div>
+
+    <section class="galerie-produits">
+      <h2>Nos Articles en Vente</h2>
+      <div class="galerie">
+        <div class="item">
+          <img src="images/1.jpeg" alt="Fauteuil contemporain gris">
+          <p class="prix">25 000 FCFA</p>
+        </div>
+        <div class="item">
+          <img src="images/2.jpg" alt="Lampe design en bois">
+          <p class="prix">30 000 FCFA</p>
+        </div>
+        <div class="item">
+          <img src="images/3.jpg" alt="Table basse minimaliste">
+          <p class="prix">20 000 FCFA</p>
+        </div>
+        <div class="item">
+          <img src="images/4.jpeg" alt="Cadre mural moderne">
+          <p class="prix">28 000 FCFA</p>
+        </div>
+        <div class="item">
+          <img src="images/5.jpeg" alt="Tapis scandinave">
+          <p class="prix">35 000 FCFA</p>
+        </div>
+        <div class="item">
+          <img src="images/6.jpeg" alt="Coussin décoratif coloré">
+          <p class="prix">22 000 FCFA</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>📞 +226 54 73 99 43</p>
+      <p>📧 lavantgardiste4@gmail.com</p>
+      <p>Vous voulez redonner vie à votre intérieur ? Parlons-en !</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Modern DECO+ | Tous droits réservés</p>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant -->
+  <a 
+    href="https://wa.me/22663608075" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="whatsapp-float" 
+    aria-label="Contacter Modern DECO+ sur WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M20.52 3.48a11.92 11.92 0 00-17.04 0c-4.68 4.68-4.68 12.28 0 16.96l-1.92 5.76 6.4-1.92a11.97 11.97 0 0012.56-12.56zm-8.52 14.04c-1.16 0-2.24-.32-3.2-.88l-.24-.12-3.12.96.96-3.12-.12-.24a6.527 6.527 0 1111.04-4.56 6.5 6.5 0 01-6.32 7.92zm3.36-4.56c-.12-.08-.68-.32-1.56-.64-.48-.16-.88-.24-1.28.24-.4.48-1.56 1.8-1.92-2.16-.16-.56-.88-1.44-1.36-1.68-.48-.24-1.04-.28-1.6-.08 0 0-.48.16-.72.48-.24.32-.96 1.12-.96 2.72s.96 3.16 1.08 3.38c.12.24 1.8 2.88 4.32 4.04 3 .96 3.64.68 4.28.6.64-.08 2.04-.84 2.32-1.68.28-.84.28-1.56.2-1.68-.08-.12-.32-.2-.68-.32z"/>
+    </svg>
+  </a>
+</body>
+</html>
